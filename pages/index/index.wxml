@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" class="banners" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{banner}}">
+          <swiper-item class="banner">
+            <image src="{{item.image}}" data-id="{{item.id}}" bindtap="bindViewTap" class="banner-image" width="100%" height="100%" />
+            <text class="banner-title">{{item.title}}</text>
+          </swiper-item>
+        </block>
+      </swiper>
+
+      <view class="weui-panel__bd">
+          <navigator wx:for="{{list}}" wx:for-index="id" url="/pages/detail/index?id={{item.id}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <text wx:if="{{item.header}}" class="sub-title">{{item.header}}</text>
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+              <image class="weui-media-box__thumb" src="{{item.images[0]}}" />
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+              <view class="weui-media-box__desc">{{item.title}}</view>
+            </view>
+          </navigator>
+
+          <button type="primary" class="load-btn" loading="{{loading}}" plain="{{plain}}" bindtap="loadMore"> 更多 </button>
+      </view>
+    </view>
+  </view>
+</view>

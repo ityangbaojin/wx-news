@@ -1,0 +1,11 @@
+<import src="../../resources/wxParse/wxParse.wxml" />
+<view class="page wxParse">
+  <view class="art-header">
+    <image src="{{art.image}}" class="art-img" />
+    <view class="art-title">{{art.title}}</view>
+    <view class="art-source">{{art.image_source}}</view>
+  </view>
+  <view class="art-content">
+    <template is="wxParse" data="{{wxParseData:body.nodes}}" />
+  </view>
+</view>

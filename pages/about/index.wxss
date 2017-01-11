@@ -1,0 +1,12 @@
+.img-head {
+  margin-top: 50px;
+  text-align: center;
+}
+.img-head image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.about-name{
+    text-align: center;
+}
