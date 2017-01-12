@@ -1,5 +1,4 @@
-# wx-news
-微信小程序示例
+# 微信小程序示例
 
 ### effect
 ![](./doc/effect.gif)
