@@ -8,7 +8,7 @@ Page({
     })
   },
   onLoad(options) {
-    var that = this
+    var that = this;
     wx.request({
       url: 'https://news-at.zhihu.com/api/4/news/' + options.id,
       method: 'GET',

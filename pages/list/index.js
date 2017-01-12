@@ -20,7 +20,6 @@ Page({
         that.setData({
           list: res.data.stories
         })
-        // console.log(res.data)
       }
     })
   }
